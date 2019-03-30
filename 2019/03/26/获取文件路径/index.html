@@ -6,19 +6,19 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>有用的网站 | Allen</title>
+  <title>获取文件路径、文件夹下所有文件名的方法 | Allen</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="知识点学习网站： 菜鸟教程 http://www.runoob.com/   廖雪峰官网 https://www.liaoxuefeng.com/  平台 Kaggle is the place to do data science projects  https://www.kaggle.com/https://www.cnblogs.com/limitlessun/p/8489749.html">
+  <meta name="description" content="Python 中扫描目录有两种方法： os.listdir 和 os.walk。具体介绍这两种方法前，先看看OS模块中跟文件相关的常用方法 跟文件相关的常用方法  os.path.splitext()：分离文件名和扩展名123file = &amp;quot;file_test.txt&amp;quot;file_name = os.path.splitext(file)[0] # 输出：file_testfil">
 <meta property="og:type" content="article">
-<meta property="og:title" content="有用的网站">
-<meta property="og:url" content="http://yoursite.com/2019/03/24/有用的网站/index.html">
+<meta property="og:title" content="获取文件路径、文件夹下所有文件名的方法">
+<meta property="og:url" content="http://yoursite.com/2019/03/26/获取文件路径/index.html">
 <meta property="og:site_name" content="Allen">
-<meta property="og:description" content="知识点学习网站： 菜鸟教程 http://www.runoob.com/   廖雪峰官网 https://www.liaoxuefeng.com/  平台 Kaggle is the place to do data science projects  https://www.kaggle.com/https://www.cnblogs.com/limitlessun/p/8489749.html">
+<meta property="og:description" content="Python 中扫描目录有两种方法： os.listdir 和 os.walk。具体介绍这两种方法前，先看看OS模块中跟文件相关的常用方法 跟文件相关的常用方法  os.path.splitext()：分离文件名和扩展名123file = &amp;quot;file_test.txt&amp;quot;file_name = os.path.splitext(file)[0] # 输出：file_testfil">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-03-29T13:45:49.276Z">
+<meta property="og:updated_time" content="2019-03-29T13:43:26.856Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="有用的网站">
-<meta name="twitter:description" content="知识点学习网站： 菜鸟教程 http://www.runoob.com/   廖雪峰官网 https://www.liaoxuefeng.com/  平台 Kaggle is the place to do data science projects  https://www.kaggle.com/https://www.cnblogs.com/limitlessun/p/8489749.html">
+<meta name="twitter:title" content="获取文件路径、文件夹下所有文件名的方法">
+<meta name="twitter:description" content="Python 中扫描目录有两种方法： os.listdir 和 os.walk。具体介绍这两种方法前，先看看OS模块中跟文件相关的常用方法 跟文件相关的常用方法  os.path.splitext()：分离文件名和扩展名123file = &amp;quot;file_test.txt&amp;quot;file_name = os.path.splitext(file)[0] # 输出：file_testfil">
   
   
     <link rel="icon" href="/favicon.png">
@@ -152,51 +152,79 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-有用的网站" class="article article-type-post " itemscope itemprop="blogPost">
+            <article id="post-获取文件路径" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 class="article-title" itemprop="name">
-      有用的网站
+      获取文件路径、文件夹下所有文件名的方法
     </h1>
   
 
         
-        <a href="/2019/03/24/有用的网站/" class="archive-article-date">
-  	<time datetime="2019-03-24T02:08:07.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-03-24</time>
+        <a href="/2019/03/26/获取文件路径/" class="archive-article-date">
+  	<time datetime="2019-03-26T13:16:51.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-03-26</time>
 </a>
         
       </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h2 id="知识点学习网站："><a href="#知识点学习网站：" class="headerlink" title="知识点学习网站："></a>知识点学习网站：</h2><ol>
-<li>菜鸟教程 <a href="http://www.runoob.com/" target="_blank" rel="noopener">http://www.runoob.com/</a>  </li>
-<li>廖雪峰官网 <a href="https://www.liaoxuefeng.com/" target="_blank" rel="noopener">https://www.liaoxuefeng.com/</a></li>
-</ol>
-<h2 id="平台"><a href="#平台" class="headerlink" title="平台"></a>平台</h2><ol>
-<li>Kaggle is the place to do data science projects  <a href="https://www.kaggle.com/" target="_blank" rel="noopener">https://www.kaggle.com/</a><br><a href="https://www.cnblogs.com/limitlessun/p/8489749.html" target="_blank" rel="noopener">https://www.cnblogs.com/limitlessun/p/8489749.html</a>  (kaggle新手入门之路)</li>
-</ol>
+        <p>Python 中扫描目录有两种方法：<strong> os.listdir </strong>和 <strong>os.walk</strong>。具体介绍这两种方法前，先看看OS模块中跟文件相关的常用方法</p>
+<h2 id="跟文件相关的常用方法"><a href="#跟文件相关的常用方法" class="headerlink" title="跟文件相关的常用方法"></a>跟文件相关的常用方法</h2><blockquote>
+<ul>
+<li>os.path.splitext()：分离文件名和扩展名<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">file = &quot;file_test.txt&quot;</span><br><span class="line">file_name = os.path.splitext(file)[0] # 输出：file_test</span><br><span class="line">file_suffix = os.path.splitext(file)[1] # 输出：.txt</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+</blockquote>
 <a id="more"></a>
-<h2 id="工具"><a href="#工具" class="headerlink" title="工具"></a>工具</h2><ol>
-<li>文档编辑工具 Zeal is an offline documentation browser for software developers <a href="https://zealdocs.org/" target="_blank" rel="noopener">https://zealdocs.org/</a></li>
-<li>ECharts，一个使用 JavaScript 实现的开源可视化库  <a href="https://echarts.baidu.com/" target="_blank" rel="noopener">https://echarts.baidu.com/</a></li>
-<li>Share Code in Real-time with Developers  <a href="https://codeshare.io/" target="_blank" rel="noopener">https://codeshare.io/</a></li>
-</ol>
-<h2 id="刷题"><a href="#刷题" class="headerlink" title="刷题"></a>刷题</h2><ol>
-<li>牛客网 <a href="https://www.nowcoder.com/" target="_blank" rel="noopener">https://www.nowcoder.com/</a> </li>
-</ol>
-<h2 id="数据"><a href="#数据" class="headerlink" title="数据"></a>数据</h2><ol>
-<li>聚数力 <a href="http://dataju.cn/Dataju/web/home" target="_blank" rel="noopener">http://dataju.cn/Dataju/web/home</a></li>
-</ol>
-<h2 id="找书"><a href="#找书" class="headerlink" title="找书"></a>找书</h2><ol>
-<li>国外文献 <a href="http://blog.sciencenet.cn/blog-752541-821254.html" target="_blank" rel="noopener">http://blog.sciencenet.cn/blog-752541-821254.html</a></li>
-</ol>
-<h2 id="博客"><a href="#博客" class="headerlink" title="博客"></a>博客</h2><ol>
-<li>使用Python Pandas处理亿级数据 <a href="http://www.justinablog.com/archives/1357" target="_blank" rel="noopener">http://www.justinablog.com/archives/1357</a></li>
-</ol>
+<blockquote>
+<ul>
+<li>os.path.exists()：判断文件或目录是否存在</li>
+<li>os.path.isfile()：判断是否是文件</li>
+<li>os.path.isdir()：判断是否是目录</li>
+<li>os.path.dirname()：获取当前文件所在的目录，即父目录</li>
+<li>os.makedirs()：创建多级目录</li>
+<li>os.mkdir()：创建单级目录</li>
+<li>os.path.getsize()：获取文件大小</li>
+</ul>
+</blockquote>
+<h2 id="一、os-listdir"><a href="#一、os-listdir" class="headerlink" title="一、os.listdir()"></a>一、os.listdir()</h2><p>模块os中的listdir()函数得到的是仅当前路径下的文件名，不包括子目录中的文件，所有需要使用递归的方法得到全部文件名。<br>语法格式如下：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">os.listdir(path= &quot;&quot;)</span><br></pre></td></tr></table></figure></p>
+<p>方法参数说明：</p>
+<blockquote>
+<ul>
+<li>path：需要列出的目录路径<br>返回值: 仅当前路径下的文件名（文件和目录名称），不包括子目录中的文件，如果需要得到所有文件需要递归。</li>
+</ul>
+</blockquote>
+<h3 id="代码演示如下："><a href="#代码演示如下：" class="headerlink" title="代码演示如下："></a>代码演示如下：</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">#在一个目录下只有文件时，如</span><br><span class="line">test_file:</span><br><span class="line">         test1.txt</span><br><span class="line">         test2.txt</span><br><span class="line">         test3.txt</span><br></pre></td></tr></table></figure>
+<p>可以使用如下代码获取每个文件的绝对路径：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">&gt;&gt;&gt; import os</span><br><span class="line">&gt;&gt;&gt; path = r&apos;C:\Users\XXN\Desktop\test_file&apos;</span><br><span class="line">&gt;&gt;&gt; for each_file in os.listdir(path):</span><br><span class="line">	print(os.path.join(path,each_file))</span><br><span class="line">结果如下：</span><br><span class="line">C:\Users\XXN\Desktop\test_file\test1.txt</span><br><span class="line">C:\Users\XXN\Desktop\test_file\test2.txt</span><br><span class="line">C:\Users\XXN\Desktop\test_file\test3.txt</span><br></pre></td></tr></table></figure></p>
+<h6 id="当需要递归进入下一层文件夹并且得到特定类型的文件时，代码如下："><a href="#当需要递归进入下一层文件夹并且得到特定类型的文件时，代码如下：" class="headerlink" title="当需要递归进入下一层文件夹并且得到特定类型的文件时，代码如下："></a>当需要递归进入下一层文件夹并且得到特定类型的文件时，代码如下：</h6><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"># -*- coding: utf-8 -*-  </span><br><span class="line">import os   </span><br><span class="line">def listdir(path, list_name):  </span><br><span class="line">    for file in os.listdir(path):  </span><br><span class="line">        file_path = os.path.join(path, file)  </span><br><span class="line">        if os.path.isdir(file_path):  </span><br><span class="line">            listdir(file_path, list_name)  </span><br><span class="line">        elif os.path.splitext(file_path)[1]==&apos;.jpeg&apos;:  </span><br><span class="line">            list_name.append(file_path) </span><br><span class="line">    return list_name</span><br></pre></td></tr></table></figure>
+<h2 id="二、os-walk"><a href="#二、os-walk" class="headerlink" title="二、os.walk()"></a>二、os.walk()</h2><p>模块os中的walk()函数可以遍历文件夹下所有的文件。(无需递归进入，返回值中包含所有文件)<br>语法格式如下：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">os.walk(top[, topdown=True[, onerror=None[, followlinks=False]]])</span><br></pre></td></tr></table></figure></p>
+<p>方法参数说明：</p>
+<blockquote>
+<ul>
+<li>top：要遍历的目录的路径</li>
+<li>topdown：可选，如果为 True，则优先遍历 top 目录，以及 top 目录下的每一个子目录，否则优先遍历 top 的子目录，默认为 True</li>
+<li>onerror: 可选， 需要一个 callable 对象，当 walk 异常时调用</li>
+<li>followlinks：可选， 如果为 True，则会遍历目录下的快捷方式(linux 下是 symbolic link)实际所指的目录，默认为 False</li>
+<li>args：包含那些没有 ‘-‘ 或 ‘–’ 的参数列表</li>
+</ul>
+</blockquote>
+<p>返回值: 三元组 (root, dirs, files)</p>
+<blockquote>
+<ul>
+<li>root ：所指的是当前正在遍历的目录的地址</li>
+<li>dirs ：当前文件夹中所有目录名字的 list (不包括子目录)</li>
+<li>files ：当前文件夹中所有的文件 (不包括子目录中的文件)</li>
+</ul>
+</blockquote>
+<h3 id="代码演示如下：-1"><a href="#代码演示如下：-1" class="headerlink" title="代码演示如下："></a>代码演示如下：</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">#比如文件test_file中既包含文件也包含文件夹：</span><br><span class="line"></span><br><span class="line">Test_file：</span><br><span class="line">        file1:</span><br><span class="line">             test1.txt</span><br><span class="line">             test2.txt</span><br><span class="line">             test3.txt</span><br><span class="line">        file2:</span><br><span class="line">             test1.txt</span><br><span class="line">             test2.txt</span><br><span class="line">             test3.txt</span><br><span class="line">        test1.txt</span><br><span class="line">        test2.txt</span><br><span class="line">        test3.txt</span><br></pre></td></tr></table></figure>
+<p>使用os.walk()可获得：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">import os</span><br><span class="line">path = r&apos;C:\Users\XXN\Desktop\test_file&apos;</span><br><span class="line">for parent,dirnames,filenames in os.walk(path):</span><br><span class="line">	print(parent,dirnames,filenames)</span><br><span class="line"> </span><br><span class="line">结果如下：</span><br><span class="line">C:\Users\XXN\Desktop\test_file [&apos;file1&apos;, &apos;file2&apos;] [&apos;test1.txt&apos;, &apos;test2.txt&apos;, &apos;test3.txt&apos;]</span><br><span class="line">C:\Users\XXN\Desktop\test_file\file1 [] [&apos;test1.txt&apos;, &apos;test2.txt&apos;, &apos;test3.txt&apos;]</span><br><span class="line">C:\Users\XXN\Desktop\test_file\file2 [] [&apos;test1.txt&apos;, &apos;test2.txt&apos;, &apos;test3.txt&apos;]</span><br></pre></td></tr></table></figure></p>
+<p>parent:列出了目录路径下面所有存在的目录的名称<br>dirnames:文件夹名<br>filenames:列出了目录路径下面所有文件的名称<br>通过下面代码可获得给定路径下所有的文件路径：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">&gt;&gt;&gt; import os</span><br><span class="line">&gt;&gt;&gt; path = r&apos;C:\Users\XXN\Desktop\test_file&apos;</span><br><span class="line">&gt;&gt;&gt; for parent,dirnames,filenames in os.walk(path):</span><br><span class="line">	for filename in filenames:</span><br><span class="line">		print(os.path.join(parent,filename))</span><br><span class="line"> </span><br><span class="line">结果如下：</span><br><span class="line">C:\Users\XXN\Desktop\test_file\test1.txt</span><br><span class="line">C:\Users\XXN\Desktop\test_file\test2.txt</span><br><span class="line">C:\Users\XXN\Desktop\test_file\test3.txt</span><br><span class="line">C:\Users\XXN\Desktop\test_file\file1\test1.txt</span><br><span class="line">C:\Users\XXN\Desktop\test_file\file1\test2.txt</span><br><span class="line">C:\Users\XXN\Desktop\test_file\file1\test3.txt</span><br><span class="line">C:\Users\XXN\Desktop\test_file\file2\test1.txt</span><br><span class="line">C:\Users\XXN\Desktop\test_file\file2\test2.txt</span><br><span class="line">C:\Users\XXN\Desktop\test_file\file2\test3.txt</span><br></pre></td></tr></table></figure></p>
+<h6 id="当需要特定类型的文件时，代码如下："><a href="#当需要特定类型的文件时，代码如下：" class="headerlink" title="当需要特定类型的文件时，代码如下："></a>当需要特定类型的文件时，代码如下：</h6><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"># -*- coding: utf-8 -*-   </span><br><span class="line">import os  </span><br><span class="line">def file_name(file_dir):   </span><br><span class="line">    L=[]   </span><br><span class="line">    for root, dirs, files in os.walk(file_dir):  </span><br><span class="line">        for file in files:  </span><br><span class="line">            if os.path.splitext(file)[1] == &apos;.jpeg&apos;:  </span><br><span class="line">                L.append(os.path.join(root, file))  </span><br><span class="line">    return L</span><br></pre></td></tr></table></figure>
+<h3 id="其他应用"><a href="#其他应用" class="headerlink" title="其他应用"></a>其他应用</h3><p><strong> 编写一个程序，用户输入关键字，查找当前文件夹内（如果当前文件夹内包含文件夹，则进入文件夹继续搜索）所有含有该关键字的文本文件（.txt后缀），要求显示该文件所在的位置以及关键字在文件中的具体位置（第几行第几个字符） </strong><br>思路：1.先把当前文件夹下的.txt文件以及当前文件包含的子文件夹中的.txt文件的路径全部保存至一个txt_list列表中；2.以读取的方式打开txt_list中每个路径的文件，并将每个文件中出现关键字的行数以及关键字索引保存至一个字典dict_keywords中。3.按格式输出。<br>代码演示：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br></pre></td><td class="code"><pre><span class="line">import os</span><br><span class="line">def print_keywords(dict_keywords):</span><br><span class="line">    keys = dict_keywords.keys()</span><br><span class="line">    keys = sorted(keys)</span><br><span class="line">    for each in keys:</span><br><span class="line">        print(&apos;关键字出现在第 %s 行，第 %s 个位置。&apos;% (each, str(dict_keywords[each])))</span><br><span class="line">    </span><br><span class="line">def line_keywords(line, keywords):</span><br><span class="line">    key_index = []</span><br><span class="line">    start = line.find(keywords)</span><br><span class="line">    while start!=-1:</span><br><span class="line">        key_index.append(start+1)</span><br><span class="line">        start = line.find(keywords, start+1)</span><br><span class="line">    return key_index       </span><br><span class="line">    </span><br><span class="line"> </span><br><span class="line">def file_keywords(filename, keywords):</span><br><span class="line">    f = open(filename,&apos;r&apos;)</span><br><span class="line">    line = 0</span><br><span class="line">    dict_keywords = dict()</span><br><span class="line">    for each_line in f:</span><br><span class="line">        line +=1</span><br><span class="line">        if keywords in each_line:</span><br><span class="line">                key_index = line_keywords(each_line, keywords)</span><br><span class="line">                dict_keywords[line]= key_index</span><br><span class="line">    f.close()</span><br><span class="line">    return dict_keywords</span><br><span class="line"> </span><br><span class="line">    </span><br><span class="line">def file_search(keywords, flag):</span><br><span class="line">    all_files = os.walk(os.getcwd())</span><br><span class="line">    txt_list = []</span><br><span class="line"> </span><br><span class="line">    for each in all_files:</span><br><span class="line">        for filename in each[2]:</span><br><span class="line">            if os.path.splitext(filename)[1] == &apos;.txt&apos;:</span><br><span class="line">                txt_list.append(os.path.join(each[0],filename))</span><br><span class="line"> </span><br><span class="line">    for each_txt_file in txt_list:</span><br><span class="line">        dict_keywors = file_keywords(each_txt_file, keywords)</span><br><span class="line">        print(&apos;====================================================&apos;)</span><br><span class="line">        print(&apos;在文件【%s】中找到关键字【%s】&apos; % (each_txt_file, keywords))</span><br><span class="line"> </span><br><span class="line">        if flag in [&apos;YES&apos;, &apos;Yes&apos;, &apos;yes&apos;]:</span><br><span class="line">              print_keywords(dict_keywors)</span><br><span class="line">        </span><br><span class="line">keywords = input(&quot;请将该脚本放于待查找的文件夹中，请输入关键字:&quot;)</span><br><span class="line">flag = input(&quot;请问是否需要打印关键字【%s】在文件中的具体位置（YES/NO）:&quot;)</span><br><span class="line">file_search(keywords, flag)</span><br></pre></td></tr></table></figure></p>
 
       
 
@@ -281,7 +309,7 @@
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2019/03/24/有用的网站/" alt="微信分享二维码">
+      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2019/03/26/获取文件路径/" alt="微信分享二维码">
     </div>
 </div>
 
@@ -295,18 +323,9 @@
   
 <nav id="article-nav">
   
-    <a href="/2019/03/26/迭代器/" id="article-nav-newer" class="article-nav-link-wrap">
-      <i class="icon-circle-left"></i>
-      <div class="article-nav-title">
-        
-          迭代器
-        
-      </div>
-    </a>
   
-  
-    <a href="/2019/03/22/女神/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">女神</div>
+    <a href="/2019/03/26/迭代器/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">迭代器</div>
       <i class="icon-circle-right"></i>
     </a>
   
